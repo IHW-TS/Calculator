@@ -1,60 +1,5 @@
-/*.container {
-    display: grid;
-    
-    grid-template-areas: 
-    " header header header header"
-    " AC AC DEL division "
-    " 1 2 3 X"
-    " 4 5 6 - "
-    " 7 8 9 +"
-    ". 0 = ";
-
-   
-    grid-template-columns: 
-    [head-start AC-start DEL-start A-start D-start F-start PT-start] 1fr
-    [A-end D-end F-end PT-end E-start F-start G-start Zero-start ] 1fr
-    [AC-end Del-start E-end F-end G-end Zero-end H-start I-start J-start Eg-start] 1fr
-    [Del-end H-end I-end J-end Div-start Mul-Start Min-start Add-start] 1fr
-    [head-end Div-end Mul-end Min-end Add-end Eg-end];
-
-    grid-template-rows: 
-    
-    [rows1-start] 1fr
-    [rows2-start] 1fr
-    [rows3-start] 1fr
-    [rows4-start] 1fr
-    [rows5-start] 1fr
-    [rows6-start] 1fr
-    [rows7-start];
-
-    grid-column-gap: 1cm;
-    grid-row-gap: 1cm;
-   
-    outline: 1px solid black;
-    padding: 20px;
-    background-color: blueviolet;
-
-
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 1cm;
-grid-row-gap: 1cm;
-width: 282px;
-height: 290px;
-outline: 1px solid black;
-padding: 20px;
-  
-
-
-}*/
-
-
 * {
-
   background-color: rgb(103, 66, 235);
-  
-
 }
 
 .container {
@@ -72,19 +17,15 @@ padding: 20px;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
   margin: 0px;
-
 }
 
-
 .grid-item {
-
   background-color: rgb(205, 210, 238);
   font-size: 30px;
   text-align: center;
   align-items: center;
   line-height: 100px;
 }
-
 
 .grid-item1 {
   background-color: rgb(3, 16, 88);
@@ -94,7 +35,6 @@ padding: 20px;
   align-items: center;
   grid-column:  span 4;
   line-height: 200px;
-
 }
 
 .grid-item2 {
@@ -113,38 +53,4 @@ padding: 20px;
   align-items: center;
   line-height: 100px;
   grid-column:  span 2;
-
-
 }
-
-/*
-
-.grid-item1 {
-  background-color: black;
-  color: white; 
-  grid-column: head-start / head-end;
-  grid-row: rows1-start / rows2-start;
-
-}
-
-.grid-item2 {
-
-  grid-column: AC-start / AC-end;
-  grid-row: rows2-start / rows3-start;
-  
-}
-
-.grid-item3 {
-
-  grid-column: DEL-start / DEL-end;
-  grid-row: rows1-start / rows2-start;
-  
-}
-
-.grid-item4 {
-
-
-grid-column: Div-start / Div-end;
-grid-row: rows-start / rows-start;
-
-}*/
