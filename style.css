@@ -1,11 +1,12 @@
+
 * {
     background-color: rgb(103, 66, 235);
 }
-
+/*
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-gap: 3px;
     width: 450px;
     height: auto;
@@ -78,3 +79,57 @@
     background-color: rgb(252, 143, 126);
     transform: scale(1.05);
 }
+*/
+
+
+.containeur {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  grid-gap: 3px;
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  color: aliceblue;
+  font-size: 2rem;
+
+}
+
+.containeur > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #ffffff;
+  outline: none;
+  background-color: rbga(255, 255, 255, 0.75);
+  background-color: rgb(205, 210, 238);
+  font-size: 30px;
+  transition: 1s;
+}
+
+.containeur > button:hover {
+  background-color: #a9a9a9;
+  background-color: rgb(252, 143, 126);
+  transform: scale(1.05);
+}
+
+.spdeux {
+  color: rgba(206, 49, 49, 0.75);
+  grid-column: span 2;
+ 
+}
+
+.result {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Calculatrice</title>
-</head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+
+</head>
 <body>
-  <div class="container">
-      <div class="grid-item1">3</div>
-      <div class="grid-item2">AC</div>
-      <div class="grid-item">DEL</div>
-      <div class="grid-item">÷</div>
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">*</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">-</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
-      <div class="grid-item">9</div>
-      <div class="grid-item">+</div>
-      <div class="grid-item">.</div>
-      <div class="grid-item">0</div>
-      <div class="grid-item3">=</div>
+    <div class="containeur">
+        <div class="result">
+            <div data-avant class="avant"></div>
+            <div data-apres class="apres"></div>
+        </div>
+        <button data-res class="spdeux">AC</button>
+        <button data-del>DEL</button>
+        <button data-op>÷</button>
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-op>*</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-op>+</button>
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-op>-</button>
+        <button data-num>.</button>
+        <button data-num>0</button>
+        <button data-eg class="spdeux">=</button>
+
     </div>
 </body>
+
 </html>
